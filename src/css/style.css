@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+	font-size:20px;
+	background-color:#000000;
+}
+
+.app-dock {
+	padding:25px;
+}
+
+/* start of navigation */
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav li {
+	min-width:165px;
+	text-align:center;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.nav > li > a:hover {
+  border:1px solid #37c5ff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.nav > li > a:focus {
+  border:1px solid #37c5ff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -100px;
+    margin-top: 15px;
+    width: 75%;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 5px solid #5A5A5A;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+.navbar-left img {
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+/* start of drop down menu */
+.drop-down-menu {
+	position:relative;
+}
+
+.menu-item-container {
+	position:fixed;
+	top:60px;
+	background-color:#5A5A5A;
+	padding:0;
+	border:1px solid #37c5ff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index:1000;
+}
+
+.menu-item-container a {
+  text-decoration:none;	
+}
+
+.collapse {
+	display: none;
+}
+
+.expand {
+	display: block;
+}
+
+/* start of carousel */
+.carousel {
+	color:#f5f5f5;
+}
+
+.carousel .next, .carousel .previous {
+	cursor: pointer;
+}
+
+.carousel .glyphicon {
+	 font-size: 45px;
+ }
+
+.carousel .none {
+	color:#5a5a5a;
+	cursor: default;
+}
+
+.carousel .right {
+	text-align: right;
+}
+
+.animated-image {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+
+
+/*responsive*/
+@media screen and (min-device-width:0px) and (max-device-width:960px){
+	.container {
+   		width:100%;
+	}
+
+	.nav li {
+		text-align:center;
+	}
+
+	.menu-item-container {
+		top:75px;
+	}
+
+	.navbar-custom {
+		height:125px;
+		font-family: 'Raleway', sans-serif;
+		font-size:20px;
+	}
+}
+	           
+
+
