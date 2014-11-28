@@ -2,6 +2,8 @@
 var React = require('react/addons');
 var ReactTransitionGroup = React.addons.TransitionGroup;
 var _ = require('underscore');
+var CarouselImage = require('./carouselImage');
+
 //@todo see http://codepen.io/makenosound/pen/rstvx
 var Carousel = React.createClass({
 
@@ -76,7 +78,7 @@ var Carousel = React.createClass({
                                     </div>
                                     <div className="col-xs-4">
                                         <ReactTransitionGroup transitionName="carousel" className="animated-image">
-                                            <img src={imageSource} key={imageSource} />
+                                            <CarouselImage imageSrc={imageSource} />
                                         </ReactTransitionGroup>
                                     </div>
                                     <div className="col-xs-4 right">
